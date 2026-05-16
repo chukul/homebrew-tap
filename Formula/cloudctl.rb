@@ -5,21 +5,21 @@
 class Cloudctl < Formula
   desc "Secure AWS AssumeRole session manager with MFA & Touch ID"
   homepage "https://github.com/chukul/cloudctl"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/chukul/cloudctl/releases/download/v1.3.0/cloudctl_1.3.0_darwin_amd64.tar.gz"
-    sha256 "bfacb962c02052faee9c08c16f7d1654755f43586bfdc934d6ebf7adf9b3cd2d"
+    url "https://github.com/chukul/cloudctl/releases/download/v1.4.0/cloudctl_1.4.0_darwin_amd64.tar.gz"
+    sha256 "9e028ac141732713353719d80807583e4b3d195f32c219f4cf3827a2c52803b8"
 
     define_method(:install) do
       bin.install "cloudctl"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/chukul/cloudctl/releases/download/v1.3.0/cloudctl_1.3.0_darwin_arm64.tar.gz"
-    sha256 "9f9c6b0f253c3890f9900aeabdd879445a9eec7ef301c33a7b791bec086a2620"
+    url "https://github.com/chukul/cloudctl/releases/download/v1.4.0/cloudctl_1.4.0_darwin_arm64.tar.gz"
+    sha256 "e8d77cd612d9d37560720fabc51f06f7d6cc761413f2f9fd4f073e0dc81e7706"
 
     define_method(:install) do
       bin.install "cloudctl"
